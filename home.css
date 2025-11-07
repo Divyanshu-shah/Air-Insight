@@ -1,0 +1,572 @@
+body,html{
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+*{
+    font-family: sans-serif;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(39, 80, 96);
+    display: flex;
+    gap: 35%;
+}
+
+.in-navone{
+    height: 70%;
+    width: 5%;
+  
+    background-size: cover;
+    margin-top: -10px;
+    margin-left: 20px ;
+    filter: drop-shadow(2px 2px 5px black);
+}
+#im{
+    width: 155px;
+    height: 120px;
+    
+}
+img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.in-nav-two{
+    display: flex;
+    width: 58%;
+    height: 70%;
+    /*background-color: blueviolet;*/
+    margin-top:20px ;
+    gap: 0.10%;
+    color: white;
+}
+.anchor {
+    width: 30%;
+    height: 70%;
+   text-underline-offset: none;
+}
+.sign{
+    width: 10.5vw;
+    height: 7.5vh;
+    border-radius: 4vw;
+    background-color: #41C9E2;
+    border: 3px solid white;
+    border-top-color: rgb(17, 193, 212);
+    border-left-color:  rgb(61, 123, 237);
+    border-right-color: blue;
+    border-bottom-color: rgb(173, 90, 251) ;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: white;
+    background-blend-mode:multiply;
+    box-shadow: 2px 4px black;
+    
+}
+#anc{
+    /*border-right: 2px solid black;*/
+}
+
+.con-one{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+
+}
+
+.more-info{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    margin-bottom: 0;
+   
+}
+
+
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(111, 193, 215);
+    
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    
+}
+
+.inner-right{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+   
+}
+
+.img-two{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hading{
+    width: 70%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    /*border: 2px solid black;*/
+    text-align: center;
+   color: aliceblue;
+   text-shadow: 2px 2px 5px blue;
+   font-weight: bolder;
+   font-size:xx-large;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.dis{
+    width: 90% ;
+    height: 20%;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 2px solid rgb(20, 0, 120);*/
+    text-align: center;
+   color: aliceblue;
+   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+   font-weight: bolder;
+   font-size: larger;
+   font-style: italic;
+   
+}
+.main-fun{
+    width: 100%;
+    height: calc(100% - 100px ) ;
+    background-color: black;
+    display: flex;
+}
+.left-fun{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(41, 153, 170);
+
+}
+.right-fun{
+    width: 50%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+.res{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:4% ;
+    border: 10px  rgb(48, 94, 164);
+    border-style:groove ;
+    box-shadow: 0 3px  6px rgb(255, 255, 255) ;
+    border-radius: 5px;
+}
+.fun-head{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.search{
+    width: 60%;
+    height: 60%;
+    background-color: rgb(242, 241, 241);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+   box-shadow: 3px  3px 6.5px black;
+}
+
+.text-one{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 34, 89);
+}
+.hone{
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    font-weight:bolder ;
+}
+
+.htwo{
+    
+    text-shadow: 2px 2px 3px rgb(52, 76, 255);
+    font-weight:bolder ;
+    font-size: large;
+    
+}
+
+.se-in{
+    width: 100%;
+    height: 26.5%;
+}
+
+.con{
+    width: 80%;
+    height: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    /*background-color: black;*/
+}
+.butt{
+    width: 80%;
+    height: 12%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    /*background-color: aquamarine;*/
+}
+
+#country{
+   
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+   
+   border: transparent;
+   border-radius: 6.5px;
+    box-shadow: 0 2px 3px black;
+    font-size: 20px;
+    color: #4b00ff;
+    cursor: pointer;
+    outline: 0;
+}
+
+.buttone{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6.5px;
+    box-shadow: 0 2px 3px black;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(88, 101, 100);
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+.two-main-fun{
+    width: 100%;
+    height: calc(100% - 100px ) ;
+    display: flex;
+}
+.left-two-fun{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(25, 91, 138);
+}
+.right-two-fun{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(160, 192, 215);
+    
+}
+
+.causes{
+    width: 100%;
+    height:  calc(100% - 290px ) ;
+    background-color: blue;
+   
+}
+.cause{
+    width: 100%;
+    height:  calc(100% - 290px ) ;
+    background-color: blue;
+    margin-top: 35px;
+   
+}
+.cause-head{
+    width: 100%;
+    height: 20% ;
+    background-color: rgb(13, 54, 138);
+    text-align: center;
+    font-size: larger;
+    align-content: center;
+ 
+    font-weight: bolder;
+    color: aliceblue;
+    text-shadow: 3px 4px black;
+   
+}
+.inner-cause{
+   width: 100%;
+   height: 80%;
+   background-color: #41C9E2;
+   display: grid;
+   display: flex;
+   padding-top: 40px;
+  
+   
+}
+.main-cause{
+    width: 23%;
+    height: 85%;
+    /*background-color: orange;*/
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+
+.main-cause-s{
+    width: 23%;
+    height: 85%;
+    /*background-color: orange;*/
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#one-cause{
+    background: url("OIP\ \(2\).jpeg"), rgba(0,0,0, 0.4);
+    
+    background-blend-mode: overlay;
+    background-size: cover;
+   
+}
+#two-casue{
+    background: url("OIP\ \(3\).jpeg"),rgba(0,0,0, 0.4);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#three-casuse{
+    background: url("new-post-image.jpg"),rgba(0,0,0, 0.4);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#four-casue{
+    background: url("3-harmful-effects-of-burning-plastic.jpg"),rgba(0,0,0, 0.4);
+    background-blend-mode: overlay;
+    background-size: cover;
+
+}
+
+.jan{
+    color: aliceblue;
+    font-size:x-large;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 30%;
+    
+}
+.main-cause:hover{
+    box-shadow: 0 10px 15px rgb(255, 0, 0);
+    transform: scale(1.03);
+}
+.main-cause-s:hover{
+    box-shadow: 0 10px 15px rgb(0, 255, 30);
+    transform: scale(1.03);
+}
+
+#one-cause-s{
+    background: url("OIP\ \(4\).jpeg"), rgba(0,0,0, 0.4);
+    
+    background-blend-mode: overlay;
+    background-size: cover;
+   
+
+}
+#two-casue-s{
+    background: url("collaboration.jpeg"), rgba(0,0,0, 0.4);
+    
+    background-blend-mode: overlay;
+    background-size: cover;
+   
+}
+#three-casuse-s{
+    background: url("aforestation.jpg"), rgba(0,0,0, 0.4);
+    
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+#four-casue-s{
+    background: url("OIP\ \(5\).jpeg"), rgba(0,0,0, 0.4);
+    
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+
+footer{
+    height: 220px;
+    display: flex;
+    background-color: black;
+    margin-top:0;
+
+}
+ .footer-first{
+    /*border: 3px solid white;*/
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 100px;
+    
+}
+.footer-second{
+    /*border: 3px solid white;*/
+    color: white;
+    height: 200px;
+    width: 300px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-left: 100px;
+
+}
+.footer-third{
+    /*border: 3px solid white;*/
+    color: white;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-left: 100px;
+    height: 200px;
+    width: 300px;
+
+}
+.footer-f{
+    
+   /* border: 3px solid white;*/
+    color: white;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-left: 100px;
+    height: 200px;
+    width: 300px;
+}
+li:hover{
+    color: brown;
+    
+
+}
+.footer-h:hover{
+    color:aqua;
+}
+.note{
+    margin-top: 15px;
+}
+.gina{
+    font-size: 14px;
+    color: white;
+}
+  
+
+.anchor h3:hover{
+    color: aquamarine;
+    text-shadow: 0px 3px 3px rgb(98, 106, 255);
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.th-h{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(16, 85, 97);
+    margin-top: 40px;
+    text-align: center;
+    align-content: center;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 3px 3px black ;
+}
+
+.left-s{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(111, 193, 215);
+    
+}
+.right-s{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(75, 190, 173);
+    
+}
+
+.s-img{
+    width: 43%;
+    height: 78%;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:4% ;
+    border: 10px  rgb(48, 94, 164);
+    border-style:groove ;
+    box-shadow: 0 3px  6px rgb(0, 0, 0) ;
+    border-radius: 5px;
+    background: url("t5z1lr4n85081.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.i-img{
+    width: 80%;
+    height: 57%;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:12% ;
+    border: 10px  rgb(48, 94, 164);
+    border-style:groove ;
+    box-shadow: 0 3px  6px rgb(0, 0, 0) ;
+    border-radius: 5px;
+    background: url("air-quality-index-scaled.webp");
+    background-size:100%;
+    background-repeat: no-repeat;
+
+}
+
+.right-s h2{
+    color: whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: -2px 3px 4px rgb(0, 0, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.i-img:hover{
+    box-shadow: 3px 4px 5px rgb(0, 0, 255);
+    
+}
+.s-img:hover{
+    box-shadow: 3px 4px 5px rgb(0, 0, 255);
+}
+
+.left-s h2{
+    color: whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: -2px 3px 4px rgb(0, 0, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

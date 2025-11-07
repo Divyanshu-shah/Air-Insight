@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capital Finder</title>
+  <style>
+    #result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Capital Finder</h1>
+  <input type="text" id="country" placeholder="Enter country name...">
+  <button onclick="findCapital()">Find Capital</button>
+  <div id="result"></div>
+
+  <script>
+    // Define an object that maps country names to their capitals
+    const capitals = {
+      'India': 'Pune',
+      'United Kingdom': 'London',
+      'France': 'Paris',
+      'United States of America': 'Washington D.C.',
+      'Brazil': 'Brasilia',
+      'Canada': 'Ottawa',
+      'Australia': 'Canberra'
+      // Add more country-capital pairs here...
+    };
+
+    function findCapital() {
+      // Get the country name from the input field
+      const country = document.getElementById('country').value.trim();
+
+      // Look up the capital in the capitals object
+      const capital = capitals[country];
+
+      // Display the result
+      const resultDiv = document.getElementById('result');
+      if (capital) {
+        resultDiv.textContent = `The capital of ${country} is ${capital}.`;
+      } else {
+        resultDiv.textContent = `Sorry, we don't know the capital of ${country}.`;
+      }
+    }
+  </script>
+</body>
+</html>

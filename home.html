@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Insight</title>
+    <link href="home.css" rel="stylesheet">
+</head>
+<body>
+  <div class="nav"> 
+    <div class="in-navone">
+        <a href="home.html"><h3><img  src="Screenshot_2024-03-29_234149-removebg-preview.png" id="im"></h3></a>
+    </div>
+    
+    <div class="in-nav-two">
+    <div class="anchor">
+        <a href="home.html"><h3>Home</h3></a>
+    </div>
+    <div class="anchor">
+        <a href="about.html"><h3>About us</h3></a>
+    </div>
+    <div class="anchor" id="anc">
+        <a href="explore.html"><h3>Explore</h3></a>
+    </div>
+    
+    </div>
+  </div>  
+    <div class="con-one">
+        <div class="left">
+            <div class="hading">
+                <h1>AIR INSIGHT</h1>
+            </div>
+            <div class="dis">
+                <h2>"Protect What You Breathe"</h2>
+                <p style="font-family: 'Courier New';">Welcome to Air Insight! We believe that clean air is essential for a healthy life. Our mission is to provide real-time air quality data, insights, and solutions to help you breathe easier. Join us in the fight for cleaner air and a brighter future.”</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="inner-right">
+                <img  class="img-two" src="Designer.png" >
+            </div>
+        </div>
+    </div>
+  
+    <div class="main-fun">
+        <div class="left-fun">
+            <h1 class="fun-head">Results</h1>
+            <div class="res">
+                <div id="result"></div>
+            </div>
+        </div>
+        <div class="right-fun">
+            <div class="text-one">
+            <div class="hone">
+            <h1>AIR QUALITY</h1></div>
+            <div class="htwo">
+                <h2 ><i>INTERNATIONAL</i></h2></div></div>
+            <div class="search"> 
+              <!-- Removed empty div -->
+                <div class="con">           
+  <input type="text" id="country" placeholder="Enter country name..."></div> 
+  <div class="butt"><button onclick="findCapital()" class="buttone">Find Air Quality</button></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--more-->
+<div class="causes">
+    <div class="cause-head"><h2 class="cops">CAUSES FOR BAD AIR</h2></div>
+    <div class="inner-cause">
+        <div class="main-cause" id="one-cause"><h3 class="jan">Industrial Emissions</h3></div>
+        <div class="main-cause" id="two-casue"><h3 class="jan">Vehicle Emissions</h3></div>
+        <div class="main-cause" id="three-casuse"><h3 class="jan">Construction and Demolition</h3></div>
+        <div class="main-cause" id="four-casue"><h3 class="jan">Waste Burning</h3></div>
+    </div>
+
+
+</div>
+
+<!---->
+<div class="cause">
+    <div class="cause-head"><h2 class="cops">MAINTAIN GOOD AIR QUALITY</h2></div>
+    <div class="inner-cause">
+        <div class="main-cause-s" id="one-cause-s"><h3 class="jan">Reducing Emissions from Vehicles</h3></div>
+        <div class="main-cause-s" id="two-casue-s"><h3 class="jan">Collaboration and Policy Implementation</h3></div>
+        <div class="main-cause-s" id="three-casuse-s"><h3 class="jan">Afforestation and Green Initiatives</h3></div>
+        <div class="main-cause-s" id="four-casue-s"><h3 class="jan">Urban Planning and Green Space</h3></div>
+    </div>
+
+
+</div>
+<div class="th-h">
+    <h2>MORE INFORMATION</h2>
+</div>
+<div class="more-info">
+   
+    <div class="left-s">
+
+        <div class="i-img"></div>
+        <h2>AQI Scale Info</h2>
+        
+    </div>
+    <div class="right-s">
+        <h2>Air Quality Map of India</h2>
+        <div class="s-img">
+            
+        </div>
+        
+    </div>
+</div>
+
+<!---->
+<div class="foot" id="contact-us">
+            
+    <footer>
+        <div class="footer-first">
+            <ul type="none" class="footer-ul">
+                <li><h2 class="footer-h">About Us</h2></li>
+                <li>About Us</li>
+                <li>Video</li>
+                <li>Blogs</li>
+            </ul>
+
+        </div>
+        <div class="footer-second">
+            <ul type="none">
+                <li><h2 class="footer-h">Legal</h2></li>
+                <li>Privacy Policy</li>
+                <li> Terms of Service</li>
+                <li>Other Policies</li>
+            </ul>
+
+
+        </div>
+        <div class="footer-third">
+            <ul type="none">
+                <li><h2 class="footer-h">Contact</h2></li>
+                <li><a href="#">AirInsight@gmail.com</a></li>
+                <li>+91 7818908543</li>
+                <li>+91 666362936</li>
+            </ul>
+        </div>
+        <div class="footer-f">
+            <ul type="none">
+                <li><h2 class="footer-h">Others</h2></li>
+                <li></li>
+                <li></li>
+                <li>© 2023 Copyright:<a href="#" > AirInsight</a></li>
+            </ul>
+
+        </div>
+    </footer>
+    </div>
+    <script>
+        // Define an object that maps country names to their capitals
+        const capitals = {
+          'India': ' 91, which falls under the MODERATE level.',
+          'United States': ' 21, which falls under the GOOD level',
+          'Brazil': '22, which falls under the GOOD level',
+          'Canada': 'in Canada is 15, which falls under the GOOD level',
+          'Australia': '14, which falls under the GOOD level',
+          'China':'111, which falls under the POOR level'
+          // Add more country-capital pairs here...
+        };
+    
+        function findCapital() {
+          // Get the country name from the input field
+          const country = document.getElementById('country').value.trim();
+    
+          // Look up the capital in the capitals object
+          const capital = capitals[country];
+    
+          // Display the result
+          const resultDiv = document.getElementById('result');
+          if (capital) {
+            resultDiv.textContent = `The current Air Quality Index (AQI) in ${country} => ${capital}.`;
+          } else {
+            resultDiv.textContent = `Sorry, we don't have the recored for ${country}.`;
+          }
+        }
+
+     </script>
+
+</body>
+</html>
