@@ -3,184 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Insight</title>
+    <title>Air Insight - Next Level</title>
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="home.css" rel="stylesheet">
 </head>
 <body>
-  <div class="nav"> 
-    <div class="in-navone">
-        <a href="home.html"><h3><img  src="Screenshot_2024-03-29_234149-removebg-preview.png" id="im"></h3></a>
-    </div>
-    
-    <div class="in-nav-two">
-    <div class="anchor">
-        <a href="home.html"><h3>Home</h3></a>
-    </div>
-    <div class="anchor">
-        <a href="about.html"><h3>About us</h3></a>
-    </div>
-    <div class="anchor" id="anc">
-        <a href="explore.html"><h3>Explore</h3></a>
-    </div>
-    
-    </div>
-  </div>  
-    <div class="con-one">
-        <div class="left">
-            <div class="hading">
-                <h1>AIR INSIGHT</h1>
-            </div>
-            <div class="dis">
-                <h2>"Protect What You Breathe"</h2>
-                <p style="font-family: 'Courier New';">Welcome to Air Insight! We believe that clean air is essential for a healthy life. Our mission is to provide real-time air quality data, insights, and solutions to help you breathe easier. Join us in the fight for cleaner air and a brighter future.”</p>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html" class="logo">
+            <img src="Screenshot_2024-03-29_234149-removebg-preview.png" alt="Air Insight Logo">
+        </a>
+        <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="explore.html">Explore</a>
         </div>
-        <div class="right">
-            <div class="inner-right">
-                <img  class="img-two" src="Designer.png" >
-            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AIR <span class="highlight">INSIGHT</span></h1>
+            <h2>"Protect What You Breathe"</h2>
+            <p>Welcome to Air Insight! We believe that clean air is essential for a healthy life. Our mission is to provide real-time air quality data, insights, and solutions to help you breathe easier. Join us in the fight for cleaner air and a brighter future.</p>
+            <a href="#aqi-search" class="btn-primary">Check Air Quality</a>
         </div>
-    </div>
-  
-    <div class="main-fun">
-        <div class="left-fun">
-            <h1 class="fun-head">Results</h1>
-            <div class="res">
-                <div id="result"></div>
-            </div>
+        <div class="hero-image">
+            <img src="Designer.png" alt="Clean Air Concept">
         </div>
-        <div class="right-fun">
-            <div class="text-one">
-            <div class="hone">
-            <h1>AIR QUALITY</h1></div>
-            <div class="htwo">
-                <h2 ><i>INTERNATIONAL</i></h2></div></div>
-            <div class="search"> 
-              <!-- Removed empty div -->
-                <div class="con">           
-  <input type="text" id="country" placeholder="Enter country name..."></div> 
-  <div class="butt"><button onclick="findCapital()" class="buttone">Find Air Quality</button></div>
+        <!-- Background decorative elements -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </section>
+
+    <!-- AQI Search Tool -->
+    <section class="aqi-section" id="aqi-search">
+        <div class="glass-panel aqi-container">
+            <div class="aqi-results">
+                <h3>Results</h3>
+                <div id="result" class="result-box">Waiting for input...</div>
+            </div>
+            <div class="aqi-search-tool">
+                <div class="tool-header">
+                    <h2>AIR QUALITY</h2>
+                    <h3 class="subtitle">INTERNATIONAL</h3>
+                </div>
+                <div class="search-form">
+                    <input type="text" id="country" placeholder="Enter country name (e.g. India)">
+                    <button onclick="findCapital()" class="btn-secondary">Find Air Quality</button>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-</div>
-<!--more-->
-<div class="causes">
-    <div class="cause-head"><h2 class="cops">CAUSES FOR BAD AIR</h2></div>
-    <div class="inner-cause">
-        <div class="main-cause" id="one-cause"><h3 class="jan">Industrial Emissions</h3></div>
-        <div class="main-cause" id="two-casue"><h3 class="jan">Vehicle Emissions</h3></div>
-        <div class="main-cause" id="three-casuse"><h3 class="jan">Construction and Demolition</h3></div>
-        <div class="main-cause" id="four-casue"><h3 class="jan">Waste Burning</h3></div>
-    </div>
-
-
-</div>
-
-<!---->
-<div class="cause">
-    <div class="cause-head"><h2 class="cops">MAINTAIN GOOD AIR QUALITY</h2></div>
-    <div class="inner-cause">
-        <div class="main-cause-s" id="one-cause-s"><h3 class="jan">Reducing Emissions from Vehicles</h3></div>
-        <div class="main-cause-s" id="two-casue-s"><h3 class="jan">Collaboration and Policy Implementation</h3></div>
-        <div class="main-cause-s" id="three-casuse-s"><h3 class="jan">Afforestation and Green Initiatives</h3></div>
-        <div class="main-cause-s" id="four-casue-s"><h3 class="jan">Urban Planning and Green Space</h3></div>
-    </div>
-
-
-</div>
-<div class="th-h">
-    <h2>MORE INFORMATION</h2>
-</div>
-<div class="more-info">
-   
-    <div class="left-s">
-
-        <div class="i-img"></div>
-        <h2>AQI Scale Info</h2>
-        
-    </div>
-    <div class="right-s">
-        <h2>Air Quality Map of India</h2>
-        <div class="s-img">
-            
+    <!-- Causes -->
+    <section class="cards-section">
+        <h2 class="section-title">Causes for <span class="highlight-red">Bad Air</span></h2>
+        <div class="cards-grid">
+            <div class="card cause-card" style="background-image: url('OIP (2).jpeg');">
+                <div class="card-overlay">
+                    <h3>Industrial Emissions</h3>
+                </div>
+            </div>
+            <div class="card cause-card" style="background-image: url('OIP (3).jpeg');">
+                <div class="card-overlay">
+                    <h3>Vehicle Emissions</h3>
+                </div>
+            </div>
+            <div class="card cause-card" style="background-image: url('new-post-image.jpg');">
+                <div class="card-overlay">
+                    <h3>Construction and Demolition</h3>
+                </div>
+            </div>
+            <div class="card cause-card" style="background-image: url('3-harmful-effects-of-burning-plastic.jpg');">
+                <div class="card-overlay">
+                    <h3>Waste Burning</h3>
+                </div>
+            </div>
         </div>
-        
-    </div>
-</div>
+    </section>
 
-<!---->
-<div class="foot" id="contact-us">
-            
-    <footer>
-        <div class="footer-first">
-            <ul type="none" class="footer-ul">
-                <li><h2 class="footer-h">About Us</h2></li>
-                <li>About Us</li>
-                <li>Video</li>
-                <li>Blogs</li>
-            </ul>
-
+    <!-- Solutions -->
+    <section class="cards-section">
+        <h2 class="section-title">Maintain <span class="highlight-green">Good Air</span> Quality</h2>
+        <div class="cards-grid">
+            <div class="card solution-card" style="background-image: url('OIP (4).jpeg');">
+                <div class="card-overlay">
+                    <h3>Reducing Emissions from Vehicles</h3>
+                </div>
+            </div>
+            <div class="card solution-card" style="background-image: url('collaboration.jpeg');">
+                <div class="card-overlay">
+                    <h3>Collaboration and Policy</h3>
+                </div>
+            </div>
+            <div class="card solution-card" style="background-image: url('aforestation.jpg');">
+                <div class="card-overlay">
+                    <h3>Afforestation & Green Initiatives</h3>
+                </div>
+            </div>
+            <div class="card solution-card" style="background-image: url('OIP (5).jpeg');">
+                <div class="card-overlay">
+                    <h3>Urban Planning and Green Space</h3>
+                </div>
+            </div>
         </div>
-        <div class="footer-second">
-            <ul type="none">
-                <li><h2 class="footer-h">Legal</h2></li>
-                <li>Privacy Policy</li>
-                <li> Terms of Service</li>
-                <li>Other Policies</li>
-            </ul>
+    </section>
 
-
+    <!-- More Info -->
+    <section class="info-section">
+        <h2 class="section-title">More Information</h2>
+        <div class="info-grid">
+            <div class="glass-panel info-card">
+                <h3>AQI Scale Info</h3>
+                <div class="img-wrapper">
+                    <img src="air-quality-index-scaled.webp" alt="AQI Scale">
+                </div>
+            </div>
+            <div class="glass-panel info-card">
+                <h3>Air Quality Map of India</h3>
+                <div class="img-wrapper">
+                    <img src="t5z1lr4n85081.webp" alt="Air Quality Map">
+                </div>
+            </div>
         </div>
-        <div class="footer-third">
-            <ul type="none">
-                <li><h2 class="footer-h">Contact</h2></li>
-                <li><a href="#">AirInsight@gmail.com</a></li>
-                <li>+91 7818908543</li>
-                <li>+91 666362936</li>
-            </ul>
-        </div>
-        <div class="footer-f">
-            <ul type="none">
-                <li><h2 class="footer-h">Others</h2></li>
-                <li></li>
-                <li></li>
-                <li>© 2023 Copyright:<a href="#" > AirInsight</a></li>
-            </ul>
+    </section>
 
+    <!-- Footer -->
+    <footer id="contact-us" class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Other Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:AirInsight@gmail.com">AirInsight@gmail.com</a></li>
+                    <li>+91 7818908543</li>
+                    <li>+91 666362936</li>
+                </ul>
+            </div>
+            <div class="footer-col brand-col">
+                <img src="Screenshot_2024-03-29_234149-removebg-preview.png" alt="Air Insight" class="footer-logo">
+                <p>&copy; 2023 Copyright: AirInsight</p>
+            </div>
         </div>
     </footer>
-    </div>
+
+    <!-- Script for AQI Search -->
     <script>
-        // Define an object that maps country names to their capitals
         const capitals = {
-          'India': ' 91, which falls under the MODERATE level.',
-          'United States': ' 21, which falls under the GOOD level',
+          'India': '91, which falls under the MODERATE level.',
+          'United States': '21, which falls under the GOOD level',
           'Brazil': '22, which falls under the GOOD level',
-          'Canada': 'in Canada is 15, which falls under the GOOD level',
+          'Canada': '15, which falls under the GOOD level',
           'Australia': '14, which falls under the GOOD level',
-          'China':'111, which falls under the POOR level'
-          // Add more country-capital pairs here...
+          'China': '111, which falls under the POOR level',
+          'UK': '35, which falls under the GOOD level',
+          'Germany': '42, which falls under the GOOD level'
         };
     
         function findCapital() {
-          // Get the country name from the input field
-          const country = document.getElementById('country').value.trim();
-    
-          // Look up the capital in the capitals object
-          const capital = capitals[country];
-    
-          // Display the result
+          const countryInput = document.getElementById('country');
+          const country = countryInput.value.trim();
           const resultDiv = document.getElementById('result');
-          if (capital) {
-            resultDiv.textContent = `The current Air Quality Index (AQI) in ${country} => ${capital}.`;
-          } else {
-            resultDiv.textContent = `Sorry, we don't have the recored for ${country}.`;
+          
+          if (!country) {
+            resultDiv.innerHTML = '<span style="color: #ffaa00;">Please enter a country name.</span>';
+            return;
           }
+
+          resultDiv.innerHTML = '<div class="loader"></div>';
+          
+          // Simulate a network request for realism
+          setTimeout(() => {
+              // Exact match or case-insensitive match
+              const key = Object.keys(capitals).find(k => k.toLowerCase() === country.toLowerCase());
+              
+              if (key) {
+                const aqiMsg = capitals[key];
+                let color = "#00f0ff"; // default cyan
+                if(aqiMsg.includes("MODERATE")) color = "#ffaa00";
+                if(aqiMsg.includes("POOR")) color = "#ff4040";
+                
+                resultDiv.innerHTML = `<span style="font-size: 1.2rem; color: #fff;">AQI in <b>${key}</b> is</span><br><br><span style="color: ${color}; font-size: 1.5rem; font-weight: bold;">${aqiMsg}</span>`;
+              } else {
+                resultDiv.innerHTML = `<span style="color: #ff4040;">Sorry, we don't have records for "${country}".</span>`;
+              }
+          }, 600);
         }
 
-     </script>
-
+        // Allow pressing Enter to search
+        document.getElementById('country').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                findCapital();
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Insight</title>
-    <link href="about.css" rel="stylesheet">
+    <title>Air Insight - About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <style>
+        .about-section {
+            padding: 5rem 5%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .about-section h1 { font-size: 3.5rem; text-align: center; margin-bottom: 3rem; }
+        .about-section h2 { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; margin-top: 3rem; }
+        .about-section p { font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .about-section ul { list-style-position: inside; color: var(--text-muted); margin-left: 1rem; }
+        .about-section li { margin-bottom: 1rem; line-height: 1.6; }
+    </style>
 </head>
 <body>
-  <div class="nav">
-    <div class="in-navone">
-    <a href="home.html"><h3><img  src="Screenshot_2024-03-29_234149-removebg-preview.png" id="im"></h3></a>
-    </div>
-    
-    <div class="in-nav-two">
-    <div class="anchor">
-        <a href="home.html"><h3>Home</h3></a>
-    </div>
-    <div class="anchor">
-        <a href="#"><h3>About us</h3></a>
-    </div>
-    <div class="anchor" id="anc">
-        <a href="explore.html"><h3>Explore</h3></a>
-    </div>
-    </div>
-    </div>
-
-    <div class="main">
-        <h1 class="us">About us</h1>
-    <div class="op">
-        <h2>Introduction</h2>
-        <div class="intro">
-            <p>Welcome to Air Insight
-Air Insight is your go-to resource for real-time air quality information. Simply enter the name of a county in the search box, and we’ll provide you with the current Air Quality Index (AQI) for that area. Whether you’re a concerned citizen, a traveler, or an environmental enthusiast, we’ve got you covered.</p>
-                <p>How It Works:</p>
-                    <p>1.Search: Type the name of any county into our search box.</p>
-                    <p>2.Instant Results: Our system will fetch the latest AQI data for that county.</p>
-                    <p>3.Stay Informed: Make informed decisions based on air quality conditions.</p>
-        </div><hr>
-    </div>
-    <div class="second">
-        <h2>The Vision</h2>
-        <div class="banar">
-        <div class="point">
-            <p> &nbsp;Our Vision
-                At Air Insight, we envision a world where every individual has access to accurate and real-time air quality information. Our mission is to empower communities, travelers, and decision-makers with the knowledge they need to make informed choices about their environment.</p>
-            <ul>
-                <li>Transparency: We believe in transparency when it comes to air quality data. By providing clear and concise information, we enable people to take action.</li>
-                <li>Health and Well-being: Our vision is rooted in the well-being of our planet and its inhabitants. Clean air is essential for a healthy life.</li>
-                <li>Global Impact: We aspire to create a global impact by fostering awareness and encouraging sustainable practices.</li>
-            </ul>
-
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html" class="logo">
+            <img src="Screenshot_2024-03-29_234149-removebg-preview.png" alt="Air Insight Logo">
+        </a>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="explore.html">Explore</a>
         </div>
+    </nav>
+
+    <div class="about-section glass-panel" style="margin-top: 5rem; margin-bottom: 5rem;">
+        <h1>About <span class="highlight">Us</span></h1>
         
-    </div><hr>
-</div>
+        <h2>Introduction</h2>
+        <p>Welcome to Air Insight. Air Insight is your go-to resource for real-time air quality information. Simply enter the name of a county in the search box, and we’ll provide you with the current Air Quality Index (AQI) for that area. Whether you’re a concerned citizen, a traveler, or an environmental enthusiast, we’ve got you covered.</p>
+        
+        <p><strong>How It Works:</strong></p>
+        <p>1. <strong>Search:</strong> Type the name of any county into our search box.</p>
+        <p>2. <strong>Instant Results:</strong> Our system will fetch the latest AQI data for that county.</p>
+        <p>3. <strong>Stay Informed:</strong> Make informed decisions based on air quality conditions.</p>
+        
+        <hr style="border-color: var(--glass-border); margin: 3rem 0;">
+        
+        <h2>Our Vision</h2>
+        <p>At Air Insight, we envision a world where every individual has access to accurate and real-time air quality information. Our mission is to empower communities, travelers, and decision-makers with the knowledge they need to make informed choices about their environment.</p>
+        
+        <ul>
+            <li><strong>Transparency:</strong> We believe in transparency when it comes to air quality data. By providing clear and concise information, we enable people to take action.</li>
+            <li><strong>Health and Well-being:</strong> Our vision is rooted in the well-being of our planet and its inhabitants. Clean air is essential for a healthy life.</li>
+            <li><strong>Global Impact:</strong> We aspire to create a global impact by fostering awareness and encouraging sustainable practices.</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact-us" class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Other Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:AirInsight@gmail.com">AirInsight@gmail.com</a></li>
+                    <li>+91 7818908543</li>
+                    <li>+91 666362936</li>
+                </ul>
+            </div>
+            <div class="footer-col brand-col">
+                <img src="Screenshot_2024-03-29_234149-removebg-preview.png" alt="Air Insight" class="footer-logo">
+                <p>&copy; 2023 Copyright: AirInsight</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
